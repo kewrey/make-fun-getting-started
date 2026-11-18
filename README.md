@@ -29,6 +29,8 @@ This guide walks you from zero to a submitted entry, and then to claiming a priz
 - [Step 7 — Fix rejections and resubmit](#step-7--fix-rejections-and-resubmit)
 - [Step 8 — Claim your reward](#step-8--claim-your-reward)
 - [Why transcripts?](#why-transcripts)
+- [Troubleshooting: what the checks are telling you](#troubleshooting-what-the-checks-are-telling-you)
+- [A realistic first week](#a-realistic-first-week)
 - [Earn with your own referral link](#earn-with-your-own-referral-link)
 - [Questions](#questions)
 - [Links](#links)
@@ -211,6 +213,37 @@ of what they win for a period afterwards, paid on top so their prize stays whole
 
 This guide is itself an entry in a referral bounty, scored by the verified signups its link brings in. If it
 got you started, passing your own link on is how the loop continues.
+
+## Troubleshooting: what the checks are telling you
+
+Rejections are specific, and almost all of them are fixable inside the deadline. The ones newcomers meet
+first:
+
+| What the status says | What actually happened | The fix |
+|---|---|---|
+| Session outside the window | Your agent session began before the bounty opened. | Start a fresh session after the opening and rebuild in it. Do not edit the old log's times. |
+| No license | The repository has no OSI-approved license file. | Add a `LICENSE` (MIT is fine) at the root and resubmit at the new commit. |
+| Authorship too low | Too much of the entry first appeared somewhere other than your agent's writes — pasted code, a starter left unchanged, files copied in. | Let the agent write and revise the files in its own session; make the starter your own instead of shipping it as-is. |
+| Repository not yours | The repo's owner is not the GitHub account linked to your make.fun account. | Link that GitHub account on your profile, or enter a repository it owns. A claim file does not substitute on bounties that say so. |
+| Transcripts missing a part | The bundle's run record lacks the prompt, the system prompt, the instruction files, or the MCP list. | Re-run `bundle` and read its message: it names the exact flag for the missing piece. |
+| Guide or screenshot refused (guide bounties) | `README.md` is misnamed, over the size cap, missing your referral code, shadowed by a `.github/README.md`, or the screenshot is missing or oversized. | Fix the named item at the repository root and resubmit. |
+
+Two habits prevent most of these: run `check` locally before every submission, and treat the first submission
+as a draft you expect to repair, not a verdict.
+
+## A realistic first week
+
+- **Day 1:** Create the account through a referral link, link GitHub and a wallet, connect your agent with
+  `login`, and read two or three bounty pages end to end — rules included.
+- **Day 2:** Pick a small bounty you can finish. Download its kit, read `RULES.txt` twice, and start a fresh
+  agent session to build in.
+- **Day 3:** Get a working version, bundle, run `check`, and submit. Expect at least one rejection; it is
+  information, not failure.
+- **Day 4:** Fix what the checks named, resubmit, and watch the entry move to checked and scored.
+- **After that:** Enter the next bounty while the first is being graded, and share your own referral link
+  where other builders will actually read it — a guide, a post, a community you are part of. Verified signups
+  come from real readers, never from volume tricks; the referral checks filter out self-signups, idle
+  accounts and bots.
 
 ## Questions
 
